@@ -1,0 +1,223 @@
+#logo{
+    width: 150px;
+    height: 80px;
+    margin-left: 0px;
+}
+
+.lightgraybg {
+    background-color: lightgray;
+    height: 80px;
+    padding: 0px;
+}
+
+#korisnik{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    float: right;
+}
+
+#ikon{
+    position: relative;
+    right: 0px;
+}
+
+
+.drugi_red{
+    background-color: #dddddd; ;
+    width:100%; 
+    height:815px; 
+    position:relative;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+
+.prvi_red table{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+#td4{
+    justify-content: right;
+    text-align: right;
+}
+
+.third img{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.blank{
+    height: 650px;
+    background-color: royalblue;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 200px;
+    border: 2px solid darkblue;
+}
+
+h5{
+    padding: 50px 50px 0px 50px;
+}
+
+
+
+.drugi_red table{
+    margin: 10px 20px 30px 40px
+ 
+}
+
+#td2 .drugi_red{
+    display: flex;
+    flex-direction: column;
+}
+
+#huz button{
+    margin-bottom: 40px;
+}
+
+#buz button{
+    margin-bottom: 40px;
+}
+
+.drugi_red td{
+    padding-left: 50px;
+    padding-right: 50px; 
+}
+
+th{
+    padding-left: 50px;
+}
+
+#dugme{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+td2 li{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+#postaviOglas{
+    margin-top: 0px;
+
+    margin-bottom: 10px;
+    padding-left: 10px;
+    background-color: #b6b6b6;
+    width: 250px;
+    height: 70px;
+    border-bottom: 3px solid #989898;
+    margin-right: 380px; /* Ovde pomeri ako treba 'odjavi se' da ide skroz na kraj,  380px*/
+    font-size: 10px;
+    text-align: center;
+    padding: 11px;
+    color: white;
+}
+
+
+input[type='checkbox'] {
+    -webkit-appearance:none;
+    width:35px;
+    height:35px;
+    background:white;
+    border-radius:5px;
+    border:2px solid #555;
+    vertical-align:middle;
+}
+input[type='checkbox']:checked {
+    background: darkcyan
+}
+
+
+
+
+
+#odjaviSe{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    background-color: #b6b6b6;
+    width: 250px;
+    height: 70px;
+    margin-right: 15px;
+    border-bottom: 3px solid #989898;
+    font-size: 14px;
+    text-align: center;
+    padding: 11px;
+    color: white;
+}
+p{
+    margin-left: 50px;
+}
+
+h2{
+    margin-left: 50px;
+    margin-bottom: 0px;
+}
+
+#red_selekcija{
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+    padding-top: 50px;
+}
+
+#godiste_od{
+    margin-right: 100px;
+}
+
+#leva_cena{
+    margin-right: 78px;
+}
+
+.skip{
+    background-color: royalblue;
+    height: 15px;
+}
+
+.button_trazi{
+    font-size: 20pt;
+}
+
+#leva_cena{
+    margin-bottom: 40px;
+}
+
+.blue_dugme{
+    background-color: #4F88C0;
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: x-large;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.third{
+    background-color: lightgray;
+    margin: 0px;
+    padding: 0px;
+}
+
+.third img{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+a{
+    color:white;
+}
+
+a:hover{
+    color:white;
+    text-decoration: none;
+}

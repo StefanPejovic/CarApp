@@ -1,0 +1,109 @@
+#logo{
+    width: 150px;
+    height: 80px;
+    margin-left: 0px;
+}
+
+.lightgraybg {
+    background-color: lightgray;
+    height: 80px;
+    padding: 0px;
+}
+
+
+
+
+#postaviOglas{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    background-color: #b6b6b6;
+    width: 250px;
+    height: 70px;
+    border-bottom: 3px solid #989898;
+    margin-right: 15px; /* Ovde pomeri ako treba 'odjavi se' da ide skroz na kraj,  380px*/
+    font-size: 10px;
+    text-align: center;
+    padding: 11px;
+    color: white;
+}
+
+
+#odjaviSe{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    background-color: #b6b6b6;
+    width: 250px;
+    height: 70px;
+    margin-right: 15px;
+    border-bottom: 3px solid #989898;
+    font-size: 14px;
+    text-align: center;
+    padding: 11px;
+    color: white;
+}
+
+#nastaviKaoGost{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    background-color: #b6b6b6;
+    width: 250px;
+    height: 70px;
+    margin-right: 15px;
+    border-bottom: 3px solid #989898;
+    font-size: 14px;
+    text-align: center;
+    padding: 11px;
+    color: white;
+}
+
+#promenaLozinke{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    background-color: #b6b6b6;
+    width: 250px;
+    height: 70px;
+    margin-right: 15px;
+    border-bottom: 3px solid #989898;
+    font-size: 14px;
+    text-align: center;
+    padding: 11px;
+    color: white;
+}
+
+
+
+.second{
+    height: 500px;
+    background-color: lavender;
+}
+
+
+.levo{
+    padding-top: 250px;
+}
+
+
+
+.footer{
+    background-color: lavender;
+}
+
+#small{
+    color: white;
+    padding-left: 15px;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
