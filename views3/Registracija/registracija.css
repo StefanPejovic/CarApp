@@ -1,0 +1,38 @@
+.lightgraybg{
+    text-align: center;
+    background-color: gray;
+    /*padding-left: 600px;*/
+}
+
+.table {
+    background-color: gray;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    
+}
+
+/*.navbar-nav{
+    padding-left: 700px;
+}*/
+
+h2 {
+    width: 100%;
+    text-align:center;
+}
+
+td{
+    text-align: center;
+}
+
+th{
+    text-align: center;
+}
+
+.btn {
+    background-color:lightgray;
+}
+
+
+
+
+

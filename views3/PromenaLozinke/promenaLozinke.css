@@ -1,0 +1,29 @@
+
+.table {
+    max-height:initial;
+}
+
+/*.navbar-nav{
+    padding-left: 700px;
+}*/
+
+h2 {
+    width: 100%;
+    text-align:center;
+}
+
+td{
+    text-align: center;
+}
+
+th{
+    text-align: center;
+}
+
+.btn{
+    background-color: lightgrey;
+}
+
+
+
+

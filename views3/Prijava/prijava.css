@@ -1,0 +1,39 @@
+.lightgraybg{
+    text-align: center;
+    background-color: gray;
+    /*padding-left: 600px;*/
+}
+
+.table {
+    max-height:initial;
+}
+
+h2 {
+    width: 100%;
+    text-align:center;
+}
+
+td{
+    text-align: center;
+
+}
+
+th{
+    text-align: center;
+}
+
+.btn {
+    background-color: lightgrey;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
