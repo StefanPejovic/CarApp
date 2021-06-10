@@ -1,0 +1,1413 @@
+{
+  "id": "40afab5e-ef97-47a3-a663-f90dd8f3efc7",
+  "version": "2.0",
+  "name": "DodavanjeOglasa",
+  "url": "http://localhost/psi_carapp/index.php?controller=guest&action=index",
+  "tests": [{
+    "id": "88fec88b-c867-4abe-ad8f-5ed64d2af14e",
+    "name": "UspesnoDodatOglas",
+    "commands": [{
+      "id": "66c55430-f773-44f0-b7f0-9b60fd6ff3d2",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/psi_carapp/index.php?controller=guest&action=index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4153f013-9069-4bce-83f7-006a6dde796e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16947872-9c99-4d01-bca4-800f87f6a3ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=#postaviOglas h4",
+      "targets": [
+        ["css=#postaviOglas h4", "css:finder"],
+        ["xpath=//div[@id='postaviOglas']/a/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Prijavi se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35e39633-ab17-4542-8d1a-9c92c7935466",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c5a6737-6206-4d78-8cc5-98f201e92d37",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "stefanm"
+    }, {
+      "id": "2447deda-455b-4deb-ba09-5aca8bebd1f0",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1d8c11f-ec81-48fa-92ba-0142935694bb",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "stefanm"
+    }, {
+      "id": "a38d1d1b-11be-42b4-896e-af7a841aa7c9",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "126fa4a8-f999-429e-bb0f-dfa7d0ad9907",
+      "comment": "",
+      "command": "click",
+      "target": "css=#postaviOglas h4",
+      "targets": [
+        ["css=#postaviOglas h4", "css:finder"],
+        ["xpath=//div[@id='postaviOglas']/a/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Postavi oglas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "321074f2-31c1-4da8-ac0c-12ae2a24b8a1",
+      "comment": "",
+      "command": "click",
+      "target": "id=marka",
+      "targets": [
+        ["id=marka", "id"],
+        ["name=marka", "name"],
+        ["css=#marka", "css:finder"],
+        ["xpath=//select[@id='marka']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39bb4be8-b9b0-4177-9001-498e5d7afe9d",
+      "comment": "",
+      "command": "click",
+      "target": "id=marka",
+      "targets": [
+        ["id=marka", "id"],
+        ["name=marka", "name"],
+        ["css=#marka", "css:finder"],
+        ["xpath=//select[@id='marka']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3984dc38-f6e4-44e5-a127-f643b8db2100",
+      "comment": "",
+      "command": "click",
+      "target": "id=marka",
+      "targets": [
+        ["id=marka", "id"],
+        ["name=marka", "name"],
+        ["css=#marka", "css:finder"],
+        ["xpath=//select[@id='marka']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0b94814-36d8-4b59-b162-99a03255b61b",
+      "comment": "",
+      "command": "select",
+      "target": "id=marka",
+      "targets": [],
+      "value": "label=Mercedes-Benz"
+    }, {
+      "id": "e889393b-9e82-40ba-bc25-8a8dffb3db1a",
+      "comment": "",
+      "command": "click",
+      "target": "id=marka",
+      "targets": [
+        ["id=marka", "id"],
+        ["name=marka", "name"],
+        ["css=#marka", "css:finder"],
+        ["xpath=//select[@id='marka']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf994344-3c07-46ae-986b-12e1675690ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=model",
+      "targets": [
+        ["id=model", "id"],
+        ["name=model", "name"],
+        ["css=#model", "css:finder"],
+        ["xpath=//select[@id='model']", "xpath:attributes"],
+        ["xpath=//tr[5]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "148ea391-a5ae-4846-ba28-74bc07b7f7ca",
+      "comment": "",
+      "command": "select",
+      "target": "id=model",
+      "targets": [],
+      "value": "label=A klasa"
+    }, {
+      "id": "8015a62f-b336-45df-ab15-9ffcad7e922b",
+      "comment": "",
+      "command": "click",
+      "target": "id=model",
+      "targets": [
+        ["id=model", "id"],
+        ["name=model", "name"],
+        ["css=#model", "css:finder"],
+        ["xpath=//select[@id='model']", "xpath:attributes"],
+        ["xpath=//tr[5]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65ade4e9-4892-4e8c-afc2-442e890172c1",
+      "comment": "",
+      "command": "click",
+      "target": "id=godiste",
+      "targets": [
+        ["id=godiste", "id"],
+        ["name=godiste", "name"],
+        ["css=#godiste", "css:finder"],
+        ["xpath=//select[@id='godiste']", "xpath:attributes"],
+        ["xpath=//tr[@id='red_selekcija']/td/select", "xpath:idRelative"],
+        ["xpath=//tr[7]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "160e9fa7-e18c-4869-b1a0-49d82bf8e19a",
+      "comment": "",
+      "command": "select",
+      "target": "id=godiste",
+      "targets": [],
+      "value": "label=2018"
+    }, {
+      "id": "dbf42b3a-7a8e-406b-8e9a-fa3e4426568a",
+      "comment": "",
+      "command": "click",
+      "target": "id=godiste",
+      "targets": [
+        ["id=godiste", "id"],
+        ["name=godiste", "name"],
+        ["css=#godiste", "css:finder"],
+        ["xpath=//select[@id='godiste']", "xpath:attributes"],
+        ["xpath=//tr[@id='red_selekcija']/td/select", "xpath:idRelative"],
+        ["xpath=//tr[7]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb2235b3-469a-4713-bbb7-64a0ac91144e",
+      "comment": "",
+      "command": "click",
+      "target": "name=mesto",
+      "targets": [
+        ["name=mesto", "name"],
+        ["css=.mesto", "css:finder"],
+        ["xpath=//input[@name='mesto']", "xpath:attributes"],
+        ["xpath=//tr[@id='red_selekcija']/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23b32a27-62cf-436d-a774-418e36791c9f",
+      "comment": "",
+      "command": "type",
+      "target": "name=mesto",
+      "targets": [
+        ["name=mesto", "name"],
+        ["css=.mesto", "css:finder"],
+        ["xpath=//input[@name='mesto']", "xpath:attributes"],
+        ["xpath=//tr[@id='red_selekcija']/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Beograd"
+    }, {
+      "id": "2dacb843-ac54-4c64-a294-459be6379533",
+      "comment": "",
+      "command": "click",
+      "target": "name=cena",
+      "targets": [
+        ["name=cena", "name"],
+        ["css=.rajt", "css:finder"],
+        ["xpath=//input[@name='cena']", "xpath:attributes"],
+        ["xpath=//div[@id='ovaj']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2469c713-0a7a-468b-8d47-dd0ece071778",
+      "comment": "",
+      "command": "type",
+      "target": "name=cena",
+      "targets": [
+        ["name=cena", "name"],
+        ["css=.rajt", "css:finder"],
+        ["xpath=//input[@name='cena']", "xpath:attributes"],
+        ["xpath=//div[@id='ovaj']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "26000"
+    }, {
+      "id": "467a9a88-0026-42a9-be9d-11f2d1dc14c0",
+      "comment": "",
+      "command": "click",
+      "target": "name=kilometraza",
+      "targets": [
+        ["name=kilometraza", "name"],
+        ["css=.rajt_d", "css:finder"],
+        ["xpath=//input[@name='kilometraza']", "xpath:attributes"],
+        ["xpath=//div[@id='ovaj']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdffb536-064e-40ec-aed3-493bcb115d1b",
+      "comment": "",
+      "command": "type",
+      "target": "name=kilometraza",
+      "targets": [
+        ["name=kilometraza", "name"],
+        ["css=.rajt_d", "css:finder"],
+        ["xpath=//input[@name='kilometraza']", "xpath:attributes"],
+        ["xpath=//div[@id='ovaj']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "76000"
+    }, {
+      "id": "340a5aa4-def8-4412-9745-028f394ce2c7",
+      "comment": "",
+      "command": "click",
+      "target": "name=gorivo",
+      "targets": [
+        ["name=gorivo", "name"],
+        ["css=tr:nth-child(1) > td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='gorivo']", "xpath:attributes"],
+        ["xpath=//table[2]/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e516801d-1413-4fcd-805a-90b3fd5b9c31",
+      "comment": "",
+      "command": "type",
+      "target": "name=gorivo",
+      "targets": [
+        ["name=gorivo", "name"],
+        ["css=tr:nth-child(1) > td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='gorivo']", "xpath:attributes"],
+        ["xpath=//table[2]/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": "Dizel"
+    }, {
+      "id": "78086ebe-9101-4c10-bf8a-5919c16cbed4",
+      "comment": "",
+      "command": "click",
+      "target": "id=menjac",
+      "targets": [
+        ["id=menjac", "id"],
+        ["name=menjac", "name"],
+        ["css=#menjac", "css:finder"],
+        ["xpath=//select[@id='menjac']", "xpath:attributes"],
+        ["xpath=//table[2]/tbody/tr[3]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "496a1d09-a871-49e4-b34c-7c2dc20e5364",
+      "comment": "",
+      "command": "select",
+      "target": "id=menjac",
+      "targets": [],
+      "value": "label=Automatik"
+    }, {
+      "id": "63d3fb6d-8bcf-4c3c-a254-ccd6cf38707c",
+      "comment": "",
+      "command": "click",
+      "target": "id=menjac",
+      "targets": [
+        ["id=menjac", "id"],
+        ["name=menjac", "name"],
+        ["css=#menjac", "css:finder"],
+        ["xpath=//select[@id='menjac']", "xpath:attributes"],
+        ["xpath=//table[2]/tbody/tr[3]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e75f117b-6653-4239-9341-9edcb027a744",
+      "comment": "",
+      "command": "click",
+      "target": "id=novirajt",
+      "targets": [
+        ["id=novirajt", "id"],
+        ["name=snaga", "name"],
+        ["css=#novirajt", "css:finder"],
+        ["xpath=//input[@id='novirajt']", "xpath:attributes"],
+        ["xpath=//table[2]/tbody/tr[5]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "146b97c2-48f5-4ad5-82b7-ad1b05b7545b",
+      "comment": "",
+      "command": "type",
+      "target": "id=novirajt",
+      "targets": [
+        ["id=novirajt", "id"],
+        ["name=snaga", "name"],
+        ["css=#novirajt", "css:finder"],
+        ["xpath=//input[@id='novirajt']", "xpath:attributes"],
+        ["xpath=//table[2]/tbody/tr[5]/td/input", "xpath:position"]
+      ],
+      "value": "176"
+    }, {
+      "id": "81d3e38a-dcc2-47ea-ba11-765592343cf3",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//tr[@id='cent']/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Postavi oglas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "525b0c5f-e644-4238-92e4-cfd1502b97fe",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(2) font",
+      "targets": [
+        ["css=tr:nth-child(2) font", "css:finder"],
+        ["xpath=//tr[2]/td/font", "xpath:position"],
+        ["xpath=//font[contains(.,'Uspesno ste dodali oglas.')]", "xpath:innerText"]
+      ],
+      "value": "Uspesno ste dodali oglas."
+    }]
+  }, {
+    "id": "187a8b9e-968c-4526-b68b-fdd97e071a90",
+    "name": "NijeUnetMenjac",
+    "commands": [{
+      "id": "6b976742-a9ed-4be6-a4d9-91eba318fe21",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/psi_carapp/index.php?controller=guest&action=index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "83022287-f72c-4071-91c1-0fc5f06b1b34",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5d4989d-1f85-4442-b5e2-27a4d78c47fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#postaviOglas h4",
+      "targets": [
+        ["css=#postaviOglas h4", "css:finder"],
+        ["xpath=//div[@id='postaviOglas']/a/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Prijavi se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9160711e-d318-4c8a-a938-b4c6c1b4b0d5",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a71167ab-4516-49c9-8ed5-b101eac1fb20",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "stefanm"
+    }, {
+      "id": "339ce83b-d07c-4231-950e-07f97bdd578b",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f811aa1-f7b1-40a6-9db7-a14704980f2c",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "stefanm"
+    }, {
+      "id": "06fe2994-0a2f-4e6d-8e3a-2e5c938295ac",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "284f8b7d-db0f-4038-bdc4-d94d4085e381",
+      "comment": "",
+      "command": "click",
+      "target": "id=marka",
+      "targets": [
+        ["id=marka", "id"],
+        ["name=marka", "name"],
+        ["css=#marka", "css:finder"],
+        ["xpath=//select[@id='marka']", "xpath:attributes"],
+        ["xpath=//tr[@id='red_selekcija']/td/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04ff46e3-b98a-4c84-9373-67af1cd80392",
+      "comment": "",
+      "command": "select",
+      "target": "id=marka",
+      "targets": [],
+      "value": "label=Mercedes-Benz"
+    }, {
+      "id": "0e3ba2dc-ae87-455e-9923-096bb188be43",
+      "comment": "",
+      "command": "click",
+      "target": "id=marka",
+      "targets": [
+        ["id=marka", "id"],
+        ["name=marka", "name"],
+        ["css=#marka", "css:finder"],
+        ["xpath=//select[@id='marka']", "xpath:attributes"],
+        ["xpath=//tr[@id='red_selekcija']/td/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4abf7bc4-f6fc-4ca1-bb48-dbbc1d72693e",
+      "comment": "",
+      "command": "click",
+      "target": "id=model",
+      "targets": [
+        ["id=model", "id"],
+        ["name=model", "name"],
+        ["css=#model", "css:finder"],
+        ["xpath=//select[@id='model']", "xpath:attributes"],
+        ["xpath=//tr[@id='red_selekcija']/td[2]/select", "xpath:idRelative"],
+        ["xpath=//td[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9409d386-11a7-4c6b-9573-8737ecd2d31a",
+      "comment": "",
+      "command": "select",
+      "target": "id=model",
+      "targets": [],
+      "value": "label=GLE"
+    }, {
+      "id": "5bfaebc6-38ae-4400-8f77-9ce7e78e698a",
+      "comment": "",
+      "command": "click",
+      "target": "id=model",
+      "targets": [
+        ["id=model", "id"],
+        ["name=model", "name"],
+        ["css=#model", "css:finder"],
+        ["xpath=//select[@id='model']", "xpath:attributes"],
+        ["xpath=//tr[@id='red_selekcija']/td[2]/select", "xpath:idRelative"],
+        ["xpath=//td[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bca7bcb-1dfe-427a-9f18-c48b02d86ad8",
+      "comment": "",
+      "command": "click",
+      "target": "id=godiste_od",
+      "targets": [
+        ["id=godiste_od", "id"],
+        ["name=godiste_od", "name"],
+        ["css=#godiste_od", "css:finder"],
+        ["xpath=//select[@id='godiste_od']", "xpath:attributes"],
+        ["xpath=(//tr[@id='red_selekcija']/td/select)[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c5db9ae-9b68-4327-b449-c81e68da18f6",
+      "comment": "",
+      "command": "select",
+      "target": "id=godiste_od",
+      "targets": [],
+      "value": "label=2017"
+    }, {
+      "id": "b74aa7e1-588b-4f64-9ec7-a484b686d99a",
+      "comment": "",
+      "command": "click",
+      "target": "id=godiste_od",
+      "targets": [
+        ["id=godiste_od", "id"],
+        ["name=godiste_od", "name"],
+        ["css=#godiste_od", "css:finder"],
+        ["xpath=//select[@id='godiste_od']", "xpath:attributes"],
+        ["xpath=(//tr[@id='red_selekcija']/td/select)[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5526fcc9-7190-4733-af6b-642ca4ba0ab6",
+      "comment": "",
+      "command": "click",
+      "target": "id=godiste_do",
+      "targets": [
+        ["id=godiste_do", "id"],
+        ["name=godiste_do", "name"],
+        ["css=#godiste_do", "css:finder"],
+        ["xpath=//select[@id='godiste_do']", "xpath:attributes"],
+        ["xpath=(//tr[@id='red_selekcija']/td[2]/select)[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a02f45e-ea22-4a90-8ab0-37f1753cbc57",
+      "comment": "",
+      "command": "select",
+      "target": "id=godiste_do",
+      "targets": [],
+      "value": "label=2020"
+    }, {
+      "id": "d20b0799-4a72-428e-bca4-b3ef5a593bbd",
+      "comment": "",
+      "command": "click",
+      "target": "id=godiste_do",
+      "targets": [
+        ["id=godiste_do", "id"],
+        ["name=godiste_do", "name"],
+        ["css=#godiste_do", "css:finder"],
+        ["xpath=//select[@id='godiste_do']", "xpath:attributes"],
+        ["xpath=(//tr[@id='red_selekcija']/td[2]/select)[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6d7bd2e-62f1-4977-9873-8f9d711a6ca5",
+      "comment": "",
+      "command": "click",
+      "target": "id=leva_cena",
+      "targets": [
+        ["id=leva_cena", "id"],
+        ["name=cena_od", "name"],
+        ["css=#leva_cena", "css:finder"],
+        ["xpath=//input[@id='leva_cena']", "xpath:attributes"],
+        ["xpath=//tr[@id='red_selekcija']/td/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a984bb30-f72a-4169-9567-eea97cb4d940",
+      "comment": "",
+      "command": "click",
+      "target": "css=#postaviOglas h4",
+      "targets": [
+        ["css=#postaviOglas h4", "css:finder"],
+        ["xpath=//div[@id='postaviOglas']/a/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Postavi oglas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b162d210-dc61-4e6a-99e3-ad3c84b0fc2b",
+      "comment": "",
+      "command": "click",
+      "target": "id=marka",
+      "targets": [
+        ["id=marka", "id"],
+        ["name=marka", "name"],
+        ["css=#marka", "css:finder"],
+        ["xpath=//select[@id='marka']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b11d6741-a844-4d97-b432-12b6acacff7e",
+      "comment": "",
+      "command": "select",
+      "target": "id=marka",
+      "targets": [],
+      "value": "label=Honda"
+    }, {
+      "id": "b151396a-fe55-479d-8195-8df54d923a7f",
+      "comment": "",
+      "command": "click",
+      "target": "id=marka",
+      "targets": [
+        ["id=marka", "id"],
+        ["name=marka", "name"],
+        ["css=#marka", "css:finder"],
+        ["xpath=//select[@id='marka']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f92e9b10-d9f3-4aa7-bba1-a716e8620646",
+      "comment": "",
+      "command": "click",
+      "target": "id=model",
+      "targets": [
+        ["id=model", "id"],
+        ["name=model", "name"],
+        ["css=#model", "css:finder"],
+        ["xpath=//select[@id='model']", "xpath:attributes"],
+        ["xpath=//tr[5]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "948f9c3e-3157-4b07-9f80-1ae1fb26fc8b",
+      "comment": "",
+      "command": "select",
+      "target": "id=model",
+      "targets": [],
+      "value": "label=CIVIC"
+    }, {
+      "id": "4fed0450-d497-4d85-9cae-40d2fbb2fc17",
+      "comment": "",
+      "command": "click",
+      "target": "id=model",
+      "targets": [
+        ["id=model", "id"],
+        ["name=model", "name"],
+        ["css=#model", "css:finder"],
+        ["xpath=//select[@id='model']", "xpath:attributes"],
+        ["xpath=//tr[5]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80a9b101-adae-4443-b32e-26cfe2b0ec6c",
+      "comment": "",
+      "command": "click",
+      "target": "id=godiste",
+      "targets": [
+        ["id=godiste", "id"],
+        ["name=godiste", "name"],
+        ["css=#godiste", "css:finder"],
+        ["xpath=//select[@id='godiste']", "xpath:attributes"],
+        ["xpath=//tr[@id='red_selekcija']/td/select", "xpath:idRelative"],
+        ["xpath=//tr[7]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20e914ea-dbce-4927-a4d2-bf751bc5d4e4",
+      "comment": "",
+      "command": "select",
+      "target": "id=godiste",
+      "targets": [],
+      "value": "label=2017"
+    }, {
+      "id": "9c7e55d7-e902-4ac6-84e5-85d3eda8fd5f",
+      "comment": "",
+      "command": "click",
+      "target": "id=godiste",
+      "targets": [
+        ["id=godiste", "id"],
+        ["name=godiste", "name"],
+        ["css=#godiste", "css:finder"],
+        ["xpath=//select[@id='godiste']", "xpath:attributes"],
+        ["xpath=//tr[@id='red_selekcija']/td/select", "xpath:idRelative"],
+        ["xpath=//tr[7]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08a0f0ae-f5b1-4146-a06c-0eb0d1850cc1",
+      "comment": "",
+      "command": "click",
+      "target": "name=mesto",
+      "targets": [
+        ["name=mesto", "name"],
+        ["css=.mesto", "css:finder"],
+        ["xpath=//input[@name='mesto']", "xpath:attributes"],
+        ["xpath=//tr[@id='red_selekcija']/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2093fdf5-4d57-4297-be01-2fe1cea7da38",
+      "comment": "",
+      "command": "type",
+      "target": "name=mesto",
+      "targets": [
+        ["name=mesto", "name"],
+        ["css=.mesto", "css:finder"],
+        ["xpath=//input[@name='mesto']", "xpath:attributes"],
+        ["xpath=//tr[@id='red_selekcija']/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Beograd"
+    }, {
+      "id": "117112bb-74de-4bed-bccf-3d9963545c7e",
+      "comment": "",
+      "command": "click",
+      "target": "name=cena",
+      "targets": [
+        ["name=cena", "name"],
+        ["css=.rajt", "css:finder"],
+        ["xpath=//input[@name='cena']", "xpath:attributes"],
+        ["xpath=//div[@id='ovaj']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a6a150e-3718-4cfc-801a-f5cdc0f01f34",
+      "comment": "",
+      "command": "type",
+      "target": "name=cena",
+      "targets": [
+        ["name=cena", "name"],
+        ["css=.rajt", "css:finder"],
+        ["xpath=//input[@name='cena']", "xpath:attributes"],
+        ["xpath=//div[@id='ovaj']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "18000"
+    }, {
+      "id": "46db1eaa-1541-4432-98df-0b0fb3e878fe",
+      "comment": "",
+      "command": "click",
+      "target": "name=kilometraza",
+      "targets": [
+        ["name=kilometraza", "name"],
+        ["css=.rajt_d", "css:finder"],
+        ["xpath=//input[@name='kilometraza']", "xpath:attributes"],
+        ["xpath=//div[@id='ovaj']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88d0220c-6aa4-4f8a-a475-d8f30bd595d7",
+      "comment": "",
+      "command": "type",
+      "target": "name=kilometraza",
+      "targets": [
+        ["name=kilometraza", "name"],
+        ["css=.rajt_d", "css:finder"],
+        ["xpath=//input[@name='kilometraza']", "xpath:attributes"],
+        ["xpath=//div[@id='ovaj']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "150000"
+    }, {
+      "id": "ce99a6e9-fce5-455a-8890-a17aa55b4751",
+      "comment": "",
+      "command": "click",
+      "target": "name=gorivo",
+      "targets": [
+        ["name=gorivo", "name"],
+        ["css=tr:nth-child(1) > td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='gorivo']", "xpath:attributes"],
+        ["xpath=//table[2]/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdb51d74-55c6-4f53-9a1a-9b96e8f06326",
+      "comment": "",
+      "command": "type",
+      "target": "name=gorivo",
+      "targets": [
+        ["name=gorivo", "name"],
+        ["css=tr:nth-child(1) > td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='gorivo']", "xpath:attributes"],
+        ["xpath=//table[2]/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": "Benzin"
+    }, {
+      "id": "7b02e156-5924-47d7-a026-a3ca1d40f1d6",
+      "comment": "",
+      "command": "click",
+      "target": "id=menjac",
+      "targets": [
+        ["id=menjac", "id"],
+        ["name=menjac", "name"],
+        ["css=#menjac", "css:finder"],
+        ["xpath=//select[@id='menjac']", "xpath:attributes"],
+        ["xpath=//table[2]/tbody/tr[3]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d8f9412-d72e-4392-8770-ebddf439a68a",
+      "comment": "",
+      "command": "select",
+      "target": "id=menjac",
+      "targets": [],
+      "value": "label=Manuelac"
+    }, {
+      "id": "55713b9f-b37d-4cdd-b5b5-4440f976d88c",
+      "comment": "",
+      "command": "click",
+      "target": "id=menjac",
+      "targets": [
+        ["id=menjac", "id"],
+        ["name=menjac", "name"],
+        ["css=#menjac", "css:finder"],
+        ["xpath=//select[@id='menjac']", "xpath:attributes"],
+        ["xpath=//table[2]/tbody/tr[3]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d92dad5-1229-4a80-9eaf-c7322d596462",
+      "comment": "",
+      "command": "click",
+      "target": "id=novirajt",
+      "targets": [
+        ["id=novirajt", "id"],
+        ["name=snaga", "name"],
+        ["css=#novirajt", "css:finder"],
+        ["xpath=//input[@id='novirajt']", "xpath:attributes"],
+        ["xpath=//table[2]/tbody/tr[5]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01116579-a27e-491e-be07-6e2fe62e8356",
+      "comment": "",
+      "command": "type",
+      "target": "id=novirajt",
+      "targets": [
+        ["id=novirajt", "id"],
+        ["name=snaga", "name"],
+        ["css=#novirajt", "css:finder"],
+        ["xpath=//input[@id='novirajt']", "xpath:attributes"],
+        ["xpath=//table[2]/tbody/tr[5]/td/input", "xpath:position"]
+      ],
+      "value": "188"
+    }, {
+      "id": "29492bbd-54bb-49e1-8555-56e78a0bfe9c",
+      "comment": "",
+      "command": "click",
+      "target": "id=menjac",
+      "targets": [
+        ["id=menjac", "id"],
+        ["name=menjac", "name"],
+        ["css=#menjac", "css:finder"],
+        ["xpath=//select[@id='menjac']", "xpath:attributes"],
+        ["xpath=//table[2]/tbody/tr[3]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e139d830-fdfa-40aa-b04d-d515d3d4fdf9",
+      "comment": "",
+      "command": "select",
+      "target": "id=menjac",
+      "targets": [],
+      "value": "label=Menjac"
+    }, {
+      "id": "1a7fc4d2-f59d-47d4-9f28-98b8bbc43e58",
+      "comment": "",
+      "command": "click",
+      "target": "id=menjac",
+      "targets": [
+        ["id=menjac", "id"],
+        ["name=menjac", "name"],
+        ["css=#menjac", "css:finder"],
+        ["xpath=//select[@id='menjac']", "xpath:attributes"],
+        ["xpath=//table[2]/tbody/tr[3]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1be8b6d9-de30-4267-bb06-251c5d9c48a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//tr[@id='cent']/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Postavi oglas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "81224e53-8676-4e4b-94b1-deba5b813877",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) font",
+      "targets": [
+        ["css=tr:nth-child(1) font", "css:finder"],
+        ["xpath=//font", "xpath:position"],
+        ["xpath=//font[contains(.,'Menjac nije izabran.')]", "xpath:innerText"]
+      ],
+      "value": "Menjac nije izabran."
+    }, {
+      "id": "7cd2a51d-68b2-4499-850b-de3426717ccd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#td4 img",
+      "targets": [
+        ["css=#td4 img", "css:finder"],
+        ["xpath=//img[@alt='naz']", "xpath:img"],
+        ["xpath=//td[@id='td4']/a/img", "xpath:idRelative"],
+        ["xpath=//td/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6dd27bb-516d-4b0d-993c-9314999f29e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#odjaviSe h4",
+      "targets": [
+        ["css=#odjaviSe h4", "css:finder"],
+        ["xpath=//div[@id='odjaviSe']/a/h4", "xpath:idRelative"],
+        ["xpath=//div[3]/a/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Odjavi se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34cdd200-f45a-4e56-bdc8-954ad56832f2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Dobrodošli na CarApp!')]", "xpath:innerText"]
+      ],
+      "value": "Dobrodošli na CarApp!"
+    }]
+  }, {
+    "id": "32b89dae-bb57-4d03-bc72-8304128504e0",
+    "name": "LoseKorisnickoIme",
+    "commands": [{
+      "id": "200eb0ba-40a8-43bd-94bf-1b53ecbc07c0",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/psi_carapp/index.php?controller=guest&action=index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ea97add-4562-4288-9ac0-9cb349300433",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "921478a6-bff1-4280-b599-905066ab3d86",
+      "comment": "",
+      "command": "click",
+      "target": "css=#postaviOglas h4",
+      "targets": [
+        ["css=#postaviOglas h4", "css:finder"],
+        ["xpath=//div[@id='postaviOglas']/a/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Prijavi se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb19a4f2-71a2-4781-9984-06cc94b46100",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26886225-0e37-44e3-8d90-ae2a0b491b2b",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "st"
+    }, {
+      "id": "94409d2a-9f3a-46c6-9333-e62f467971a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) > td",
+      "targets": [
+        ["css=tr:nth-child(5) > td", "css:finder"],
+        ["xpath=//tr[5]/td", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c370615a-0eef-4d9a-b736-e528afbd7cda",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b06960c-fe8b-40ef-9930-6afcf60a4db8",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "stefanm"
+    }, {
+      "id": "eed6b942-a01d-4353-b6b1-30fe0d5eb65e",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a23a671a-9d1f-4e2a-98b8-cbddfcce5ea5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(2) font",
+      "targets": [
+        ["css=tr:nth-child(2) font", "css:finder"],
+        ["xpath=//font", "xpath:position"],
+        ["xpath=//font[contains(.,'Korisnicko ime nije ispravno.')]", "xpath:innerText"]
+      ],
+      "value": "Korisnicko ime nije ispravno."
+    }]
+  }, {
+    "id": "577924d4-0c99-4e38-ab60-6aa853635088",
+    "name": "LosaLozinka",
+    "commands": [{
+      "id": "dc9503aa-cd1f-4a55-a41f-95d967a47b5f",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/psi_carapp/index.php?controller=guest&action=index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e6856d9-7a9d-4e88-a7be-b3cf1106c6c8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0034bcfb-6cea-461f-9e68-7c30462aa5b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#postaviOglas h4",
+      "targets": [
+        ["css=#postaviOglas h4", "css:finder"],
+        ["xpath=//div[@id='postaviOglas']/a/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Prijavi se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "870b26e7-886a-4300-821e-833ad125144d",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a17280e-9518-4b85-bb11-cc38d3f03238",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "stefanm"
+    }, {
+      "id": "1d415c24-a0b8-4c20-9ca5-7ca13edb4c83",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15ce8840-03d9-4b03-bd21-a715ab9d75fd",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "dasc"
+    }, {
+      "id": "87b404ed-fdf4-42cb-b43f-b4586020a822",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30ffe367-13a1-4b08-846d-66d210f18745",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) font",
+      "targets": [
+        ["css=tr:nth-child(4) font", "css:finder"],
+        ["xpath=//tr[4]/td/font", "xpath:position"],
+        ["xpath=//font[contains(.,'Lozinka nije ispravna.')]", "xpath:innerText"]
+      ],
+      "value": "Lozinka nije ispravna."
+    }]
+  }, {
+    "id": "9bed870a-2496-4c10-a95a-3d5647086242",
+    "name": "NijeUnetoNistaOdKomponenti",
+    "commands": [{
+      "id": "4e8e0e41-1964-41f3-8a42-9a7b5df45643",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/psi_carapp/index.php?controller=guest&action=index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f99c6da-5793-4fb3-8acb-a040615cf437",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc500644-f0c0-4b39-a76f-749ed2a00244",
+      "comment": "",
+      "command": "click",
+      "target": "css=#postaviOglas h4",
+      "targets": [
+        ["css=#postaviOglas h4", "css:finder"],
+        ["xpath=//div[@id='postaviOglas']/a/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Prijavi se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "05e08a56-8a0c-4dcb-923a-bddb71637d06",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea79672c-cb02-4078-9f0a-68f9353e5ce4",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "stefanm"
+    }, {
+      "id": "b327aa6a-46d4-4d8c-9b04-e6b8df6fe2e9",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce007f74-25f2-4dc0-876c-2aad469bdd2b",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "stefanm"
+    }, {
+      "id": "bb79e1fe-aee7-4656-b96b-c5b8459617f3",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e2793a9-0b48-416c-9206-a2f7e72cd36f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#postaviOglas h4",
+      "targets": [
+        ["css=#postaviOglas h4", "css:finder"],
+        ["xpath=//div[@id='postaviOglas']/a/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Postavi oglas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d043150-1e95-438b-942b-c22b1f24179a",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//tr[@id='cent']/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Postavi oglas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "457f56cc-ecab-41a2-8eb8-b95cf443535f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) font",
+      "targets": [
+        ["css=tr:nth-child(1) font", "css:finder"],
+        ["xpath=//font", "xpath:position"]
+      ],
+      "value": "Marka automobila nije izabrana. Model automobila nije izabran. Godiste automobila nije izabrano. Cena nije uneta.\\nMesto nije uneto. Kilometraza nije uneta. Gorivo nije uneto. Menjac nije izabran. Snaga nije uneta."
+    }, {
+      "id": "5ccbe616-c15c-469b-8aad-f50d7d6f812e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#td4 img",
+      "targets": [
+        ["css=#td4 img", "css:finder"],
+        ["xpath=//img[@alt='naz']", "xpath:img"],
+        ["xpath=//td[@id='td4']/a/img", "xpath:idRelative"],
+        ["xpath=//td/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6459cd6f-293d-471d-b8f8-60b049d4e89b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#odjaviSe h4",
+      "targets": [
+        ["css=#odjaviSe h4", "css:finder"],
+        ["xpath=//div[@id='odjaviSe']/a/h4", "xpath:idRelative"],
+        ["xpath=//div[3]/a/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Odjavi se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74d41b10-4d61-479a-a3fd-55a62940e19f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Dobrodošli na CarApp!')]", "xpath:innerText"]
+      ],
+      "value": "Dobrodošli na CarApp!"
+    }]
+  }],
+  "suites": [{
+    "id": "c68da7cd-2dd1-47bb-a69e-2f7b4c5746e4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost/psi_carapp/index.php?controller=guest&action=index"],
+  "plugins": []
+}

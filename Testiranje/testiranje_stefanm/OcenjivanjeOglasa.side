@@ -1,0 +1,639 @@
+{
+  "id": "e12e7d72-4c21-4f6e-bb1d-12c363e25fe5",
+  "version": "2.0",
+  "name": "OcenjivanjeOglasa",
+  "url": "http://localhost/psi_carapp/index.php?controller=guest&action=index",
+  "tests": [{
+    "id": "2bd784a7-ede4-4e8b-b7eb-9349cbb5f88f",
+    "name": "UspesnoUnetaOcena",
+    "commands": [{
+      "id": "faeb974d-c56e-4cea-840b-fc84fddbdeda",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/psi_carapp/index.php?controller=guest&action=index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9bfd6f9c-30ce-431a-9201-09d401124a6c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "153ab942-bbd5-4e6b-9d0c-55a4f97941e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#postaviOglas h4",
+      "targets": [
+        ["css=#postaviOglas h4", "css:finder"],
+        ["xpath=//div[@id='postaviOglas']/a/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Prijavi se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8922fea7-ab01-4e13-b599-850dc8e0ae50",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fb2ba6a-728f-40e2-9e22-c7bc430aa1da",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "stefanm"
+    }, {
+      "id": "ea393eb4-583d-4c94-badb-feb22e9bc409",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20a440cc-3368-4d18-8211-4a88ff7c25a9",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "stefanm"
+    }, {
+      "id": "1d1d85bd-90a7-49d6-941f-b8dca6891acb",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f30358f7-a979-4c9b-9c97-99a459c80b82",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Trazi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f11b1a6b-978b-460c-98cf-8efa3981738b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.drugatb:nth-child(2) li:nth-child(3) b",
+      "targets": [
+        ["css=.drugatb:nth-child(2) li:nth-child(3) b", "css:finder"],
+        ["xpath=(//button[@id=\"vise'.$oglas->idO.'\"]/b)[2]", "xpath:idRelative"],
+        ["xpath=//li[3]/form/button/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Pogledaj više')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a007e470-798c-49a3-8048-fa8ab470c6fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=label:nth-child(6)",
+      "targets": [
+        ["css=label:nth-child(6)", "css:finder"],
+        ["xpath=//table[@id='drugatb']/tbody/tr[13]/td[3]/div/label[3]", "xpath:idRelative"],
+        ["xpath=//label[3]", "xpath:position"],
+        ["xpath=//label[contains(.,'3 stars')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "099cc03e-a210-4831-8e07-97cf495d40da",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=td:nth-child(3) > h4",
+      "targets": [
+        ["css=td:nth-child(3) > h4", "css:finder"],
+        ["xpath=//table[@id='drugatb']/tbody/tr[12]/td[3]/h4", "xpath:idRelative"],
+        ["xpath=//td[3]/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Kontakt - 123')]", "xpath:innerText"]
+      ],
+      "value": "Kontakt - 123"
+    }, {
+      "id": "40312fe5-5610-41cb-bea5-320b154af37c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#td4 img",
+      "targets": [
+        ["css=#td4 img", "css:finder"],
+        ["xpath=//img[@alt='naz']", "xpath:img"],
+        ["xpath=//td[@id='td4']/a/img", "xpath:idRelative"],
+        ["xpath=//td/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4abfdcd5-83db-4f2d-87d4-0a0b4febb0d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#odjaviSe h4",
+      "targets": [
+        ["css=#odjaviSe h4", "css:finder"],
+        ["xpath=//div[@id='odjaviSe']/a/h4", "xpath:idRelative"],
+        ["xpath=//div[3]/a/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Odjavi se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "980d1646-092b-4089-8165-e74d9c34d58f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Dobrodošli na CarApp!')]", "xpath:innerText"]
+      ],
+      "value": "Dobrodošli na CarApp!"
+    }]
+  }, {
+    "id": "40797f11-b706-45b2-8d6b-6800d916bfda",
+    "name": "PogresnoUnetoKorisnickoIme",
+    "commands": [{
+      "id": "506be985-e290-4d6e-b8c4-62dd7f01e77a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/psi_carapp/index.php?controller=guest&action=index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "790109e6-b2b5-4d38-8504-c875aa92341b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbea71e0-1ff1-4261-bee7-4b1bc43ba63b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#postaviOglas h4",
+      "targets": [
+        ["css=#postaviOglas h4", "css:finder"],
+        ["xpath=//div[@id='postaviOglas']/a/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Prijavi se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "38a21180-3277-4c70-ac9b-172aa10d0cfb",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be8905bf-84b9-4949-a948-bd59d5bf5180",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "s"
+    }, {
+      "id": "6397d226-0514-4525-9288-4d1a2ae12c75",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) > td",
+      "targets": [
+        ["css=tr:nth-child(5) > td", "css:finder"],
+        ["xpath=//tr[5]/td", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e751a85e-1661-42dd-9a56-391bd4e36ed8",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a56bb61-79a0-4a21-92a3-56d161fa01f3",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "stefanm"
+    }, {
+      "id": "116fe302-7e74-46b9-872a-238acce791d5",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4db7df4-a387-4bcd-a963-19a1787ad26e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(2) font",
+      "targets": [
+        ["css=tr:nth-child(2) font", "css:finder"],
+        ["xpath=//font", "xpath:position"],
+        ["xpath=//font[contains(.,'Korisnicko ime nije ispravno.')]", "xpath:innerText"]
+      ],
+      "value": "Korisnicko ime nije ispravno."
+    }]
+  }, {
+    "id": "828636b1-10a0-40f3-882c-9c70296f0d6d",
+    "name": "PogresnoUnetaLozinka",
+    "commands": [{
+      "id": "1c4f2bd2-a0b7-4eee-8e45-a30f4f0a24aa",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/psi_carapp/index.php?controller=guest&action=index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cce4340d-4b39-4b22-b543-798996433391",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ebf877a1-6896-4640-8d06-3366d6e472d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#postaviOglas h4",
+      "targets": [
+        ["css=#postaviOglas h4", "css:finder"],
+        ["xpath=//div[@id='postaviOglas']/a/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Prijavi se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8509b313-c70f-4d25-8cd5-7c8a26059415",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6bd55247-a1e7-4d60-849d-7209ffd20fac",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "stefanm"
+    }, {
+      "id": "d177c462-4ae6-4441-ab22-11e7ab12064f",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "830c9752-1a39-4583-95e8-d775e537da33",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "s"
+    }, {
+      "id": "875234f3-e484-499c-9ed0-48917283ccb4",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "211d4818-ac8a-4c8d-83f4-fe03f4c0a38c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) font",
+      "targets": [
+        ["css=tr:nth-child(4) font", "css:finder"],
+        ["xpath=//tr[4]/td/font", "xpath:position"],
+        ["xpath=//font[contains(.,'Lozinka nije ispravna.')]", "xpath:innerText"]
+      ],
+      "value": "Lozinka nije ispravna."
+    }]
+  }, {
+    "id": "5b49810b-e1ef-4111-b22c-7035d9e7218b",
+    "name": "UnetaOcenaSaRecenzijom",
+    "commands": [{
+      "id": "eeb0daa6-3eab-428b-861b-18479a553657",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/psi_carapp/index.php?controller=guest&action=index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b85d80d4-4847-417f-b231-0e9492df5be3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec141bed-6ad9-4285-b8f3-b747c0a509a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#postaviOglas h4",
+      "targets": [
+        ["css=#postaviOglas h4", "css:finder"],
+        ["xpath=//div[@id='postaviOglas']/a/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Prijavi se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e87f9129-6020-4c32-b5dd-b50b649512d6",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49d63248-de49-41db-8edc-52601227db66",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "stefanm"
+    }, {
+      "id": "15a325d6-2922-437c-9883-32f604b7fb8d",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0696a89-55f7-4503-ad5a-db3eef021f73",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "stefanm"
+    }, {
+      "id": "b7854fd9-006c-4d89-8e0b-ababcf0d80f1",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9e3bf40-2b1e-4a6f-bf93-994fe5a6d6ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Trazi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a75030d-bd05-4fe8-8a58-370ca2a427ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.drugatb:nth-child(2) li:nth-child(3) b",
+      "targets": [
+        ["css=.drugatb:nth-child(2) li:nth-child(3) b", "css:finder"],
+        ["xpath=(//button[@id=\"vise'.$oglas->idO.'\"]/b)[2]", "xpath:idRelative"],
+        ["xpath=//li[3]/form/button/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Pogledaj više')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5712cfcf-2831-433b-9c7b-6dfe8eed688e",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//button[@id='recenzije']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Recenzije')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e60ce76-789d-4ceb-8108-d71520a1d750",
+      "comment": "",
+      "command": "click",
+      "target": "name=komentar",
+      "targets": [
+        ["name=komentar", "name"],
+        ["css=td:nth-child(2) > textarea", "css:finder"],
+        ["xpath=//textarea[@id='']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31378768-9604-4d84-9860-02a6b40e3553",
+      "comment": "",
+      "command": "type",
+      "target": "name=komentar",
+      "targets": [
+        ["name=komentar", "name"],
+        ["css=td:nth-child(2) > textarea", "css:finder"],
+        ["xpath=//textarea[@id='']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Auto je besprekoran."
+    }, {
+      "id": "034c92cd-edcd-4f01-93e3-c0fd48bc9159",
+      "comment": "",
+      "command": "click",
+      "target": "name=ocena",
+      "targets": [
+        ["name=ocena", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='ocena']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f6be2f3-8475-4ab9-9efc-c2f7627ff011",
+      "comment": "",
+      "command": "select",
+      "target": "name=ocena",
+      "targets": [],
+      "value": "label=4"
+    }, {
+      "id": "5631e3df-c02e-407d-97ae-6d61614091a2",
+      "comment": "",
+      "command": "click",
+      "target": "name=ocena",
+      "targets": [
+        ["name=ocena", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='ocena']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45b5a8e4-82ac-4952-9456-df921878d490",
+      "comment": "",
+      "command": "click",
+      "target": "css=#donja b",
+      "targets": [
+        ["css=#donja b", "css:finder"],
+        ["xpath=//td[@id='donja']/button/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Postavi Recenziju')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef79610c-25f5-43a2-9df9-bb0a10e2e093",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.donjaTabelica tr:nth-child(2) > td:nth-child(2)",
+      "targets": [
+        ["css=.donjaTabelica tr:nth-child(2) > td:nth-child(2)", "css:finder"],
+        ["xpath=//table[2]/tbody/tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'Ocena: 4')]", "xpath:innerText"]
+      ],
+      "value": "Ocena: 4"
+    }, {
+      "id": "f1067896-87a2-41e8-9a95-96c2192e162e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#td4 img",
+      "targets": [
+        ["css=#td4 img", "css:finder"],
+        ["xpath=//img[@alt='naz']", "xpath:img"],
+        ["xpath=//td[@id='td4']/a/img", "xpath:idRelative"],
+        ["xpath=//td/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ff74672-4bf8-4b27-a0cb-1c6ad025158e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#odjaviSe h4",
+      "targets": [
+        ["css=#odjaviSe h4", "css:finder"],
+        ["xpath=//div[@id='odjaviSe']/a/h4", "xpath:idRelative"],
+        ["xpath=//div[3]/a/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Odjavi se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c9f4434-5d2d-4bba-a526-53425288cacf",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Dobrodošli na CarApp!')]", "xpath:innerText"]
+      ],
+      "value": "Dobrodošli na CarApp!"
+    }]
+  }],
+  "suites": [{
+    "id": "92c5f472-f7cb-4f43-b6bb-c00919440ed5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost/psi_carapp/index.php?controller=guest&action=index"],
+  "plugins": []
+}
