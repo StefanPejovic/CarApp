@@ -22,17 +22,25 @@ class Vip{
         }
     }
     
+    /*MIHAJLO KRPOVIC
+     * akcija kotrolera za pocetnu stranicu
+     */
     public function index(){
         require_once('views/GlavnaKorisnikVIP/glavnaKorisnikVIP.php');
     }
     
-    //funkcija za odjavu sa sistema
+    /*MIHAJLO KRPOVIC
+     * akcija kotrolera za odjavu sa sistema
+     */
     public function logout(){
         session_destroy();
         header("Location: ?controller=guest&action=index");
     }
     
-    //za prikaz mojih oglasa
+    /*MIHAJLO KRPOVIC
+     * akcija kotrolera za  prikaz mojih oglasa
+     * izvrsava pozivanje odg modela i pogleda kroz koji se prikazuje rezultat
+     */
     public function myAd(){
         $idK=$_SESSION['user']->id;
         $myAd=Ad::getMyAd($idK);
@@ -40,7 +48,10 @@ class Vip{
         require_once('views/MojiOglasiVip/mojiOglasiVip.php');
     }
     
-    //za prikaz sacuvanih oglasa
+    /*MIHAJLO KRPOVIC
+     * akcija kotrolera za prikaz sacuvanih oglasa
+     * izvrsava pozivanje odg modela i pogleda kroz koji se prikazuje rezultat
+     */
     public function savedAd(){
         $idK=$_SESSION['user']->id;
         $savedAd=Ad::getSavedAd($idK);
@@ -48,7 +59,10 @@ class Vip{
         require_once('views/SacuvaniOglasiVip/sacuvaniOglasiVip.php');
     }
     
-    //akrivira se klikom na subbmit dugmeta save
+     /*MIHAJLO KRPOVIC
+     * akcija kotrolera za cuvanje oglasa
+     * izvrsava pozivanje odg modela i pogleda kroz koji se prikazuje rezultat
+     */
     public function saveAd(){
         $idK=$_SESSION['user']->id;
         if($_POST['idOglasaZaCuvanje']){
@@ -60,6 +74,10 @@ class Vip{
         }
     }
     
+    /*MIHAJLO KRPOVIC
+     * akcija kotrolera za izbacivanje sacuvanog oglasa 
+     * izvrsava pozivanje odg modela i pogleda kroz koji se prikazuje rezultat
+     */
     public function unsaveAd(){
         $idK=$_SESSION['user']->id;
         if($_POST['idOglasaZaIzbacivanje']){
@@ -70,10 +88,20 @@ class Vip{
     }
     }
     
+    /*STEFAN PEJOVIC
+     * akcija kotrolera za dodavanje oglsa, kada se klikne na dugme u meniju
+      * tacnije za preusmeravanje na odgovarajuci pogled
+     
+     */
     public function adAdShow($message=NULL, $messageCorrect=NULL){
         require_once ('./views/PostaviOglasVip/postaviOglasVip.php');
     }
     
+    /*STEFAN PEJOVIC
+     * akcija kotrolera za dodavanje oglsa, 
+     * pozivanje modela
+     * prikaz rezultata kroz odg pogled
+     */
     public function adAd(){
         $message="";
         if (empty($_POST['marka'])){
@@ -238,6 +266,10 @@ class Vip{
         }
     }
     
+    /*STEFAN PEJOVIC
+     * akcija kotrolera za pretrazivanje oglasa
+     * izvrsava se odgovarajuci model i poziva se odgovarajuci pogled za prikaz rezultata
+     */
      public function searchAd(){
         if (empty($_POST['marka'])){
             $marka="";
@@ -261,7 +293,7 @@ class Vip{
             $godisteDo="";
         }
         else {
-            $godisteDo=$_POST['godiste_od'];
+            $godisteDo=$_POST['godiste_do'];
         }
         if (empty($_POST['cena_od'])){
             $cenaOd="";
@@ -289,10 +321,15 @@ class Vip{
         }
         
     
-      $nizOglasi=Ad::searchAd($marka,$model,$godisteOd,$godisteDo,$cenaOd,$cenaDo,$garancija,$rate);
-      require_once 'views/PretragaOglasaVip/pretragaOglasa.php';
+       $nizOglasi=Ad::searchAd($marka,$model,$godisteOd,$godisteDo,$cenaOd,$cenaDo,$garancija,$rate);
+       //$nizOglasiVip=Ad::searchAdVip($marka,$model,$godisteOd,$godisteDo,$cenaOd,$cenaDo,$garancija,$rate);//ovo smo dodali
+       //$nizOglasiObican=Ad::searchAdObican($marka,$model,$godisteOd,$godisteDo,$cenaOd,$cenaDo,$garancija,$rate);//ovo smo dodali
+       require_once 'views/PretragaOglasaVip/pretragaOglasa.php';
     }
     
+    /*STEFAN PEJOVIC
+     * akcija kotrolera za prikaz detaljnog oglasa
+     */
      public function fullAd(){
         
         $idOglas=$_POST['idOglasaZaPrikaz'];
@@ -301,7 +338,9 @@ class Vip{
         
     } 
     
-     //ovo je sve dole za recenzije, nisam siguran da li je ok
+    /*STEFAN PEJOVIC
+     * akcija kotrolera za prikaz polja za postavljanje komentara
+     */
      public function postaviKomPre(){
         $idOglasa=$_POST['idOglasa'];
         $oglas= Ad::getAdWithId($idOglasa);
@@ -311,6 +350,10 @@ class Vip{
         
     }
     
+     /*STEFAN PEJOVIC
+     * akcija kotrolera zapostavljanje komentara
+     * poziva odg model i prikazuje rezultat kroz odgovarajuci pogled
+     */
     public function postaviKom(){
         
         if (empty($_POST['komentar']) || empty($_POST['ocena'])  )
@@ -326,16 +369,78 @@ class Vip{
       //  require_once 'views/oglasi/prikaz_recenzija.php';
     }
     
-    
+    /*STEFAN PEJOVIC
+     * akcija kotrolera za prikaz postavljenih komentara kda se doda novi
+     */
     public function postaviPre(){
         require_once 'views/PostaviOglasVip/postaviOglasVip.php';
         
     }
     
-    //ovo zaista ne znam sta je
+   /*STEFAN PEJOVIC
+     * akcija kotrolera za prikaz postavljenih komentara
+     */
     public function prikaz_rezultata() {
             require_once 'views/oglasi/forma_pretraga.php';
     }
+    
+    
+    /*MIHAJLO KRPOVIC
+     * akcija kotrolera za prikaz oznacenih oglasa
+     * izvrsava pozivanje odg modela i pogleda kroz koji se prikazuje rezultat
+     */
+    public function oznaceniAd(){
+        $idK=$_SESSION['user']->id;
+        $oznaceniAd=Ad::getOznaceniAd($idK);
+        //require_once('views/header_user.php');
+        require_once('views/OznaceniOglasiVip/oznaceniOglasiVip.php');
+    }
+    
+    /*MIHAJLO KRPOVIC
+     * akcija kotrolera za oznacavanje oglasa
+     * izvrsava pozivanje odg modela i pogleda kroz koji se prikazuje rezultat
+     */
+    public function oznaciAd(){
+        $idK=$_SESSION['user']->id;
+        if($_POST['idOglasaZaOznacavanje']){
+        $idO=$_POST['idOglasaZaOznacavanje'];
+     
+        Ad::oznaciAd($idK, $idO);
+         $oznaceniAd=Ad::getOznaceniAd($idK);
+        require_once('views/OznaceniOglasiVip/oznaceniOglasiVip.php');
+        }
+    }
+    
+    /*MIHAJLO KRPOVIC
+     * akcija kotrolera za izbacivanje sacuvanog oglasa 
+     * izvrsava pozivanje odg modela i pogleda kroz koji se prikazuje rezultat
+     */
+    public function unoznaciAd(){
+        $idK=$_SESSION['user']->id;
+        if($_POST['idOglasaZaIzbacivanjeO']){
+        $idO=$_POST['idOglasaZaIzbacivanjeO'];
+        Ad::unoznaciAd($idK, $idO);
+        $oznaceniAd=Ad::getOznaceniAd($idK);
+        require_once('views/OznaceniOglasiVip/oznaceniOglasiVip.php');
+    }
+    }
+    
+    /*STEFAN PEJOVIC, MIHAJLO KRPOVIC
+     * akcija kotrolera za brisanje oglasa
+      * pozivane odgovarajuceg modela plus pogleda za prikaz rezultata
+     */
+    public function deleteAd(){
+        $idK=$_SESSION['user']->id;
+                Ad::deleteAd($_POST['idOglasaZaBrisanje']);
+                $myAd=Ad::getMyAd($idK);
+        //require_once('views/header_user.php');
+        require_once('views/MojiOglasiVip/mojiOglasiVip.php');
+                
+    
+        
+    }
+    
+
     
    
 

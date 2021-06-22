@@ -26,18 +26,28 @@ class Admin{
         require_once('views/GlavnaAdmin/glavnaadmin.php');
     }
     
-    //funkcija za odjavu sa sistema
+    /*MIHAJLO KRPOVIC
+     * akcija kontrolera za odjavu sa sistema 
+     * brise se sesija
+     * poziva se odgovarajuci pogled
+     */
     public function logout(){
         session_destroy();
         header("Location: ?controller=guest&action=index");
     }
     
-    //prikazuje formu za dodelu vip statusa
+    /*MIHAJLO KRPOVIC
+     * prikazuje formu za dodelu Vip statusa
+     */
     public function giveVipShow($username=NULL, $messageUsername=NULL, $messageCorrect=NULL){
         require_once('views/AdminDodeliVip/admindodelivip.php');
     }
     
-    //aktivira se klikom na submit forme za dodelu vip statusa
+    /*MIHAJLO KRPOVIC
+     * akcija kontrolera koja se poziva kada se submit-uje forma za dodelu vipStatusa
+     * ukoliko nisu uneti svi potrebni parametri vrati poruku sa greskom
+     * u suprotnom izvrsi uspesno i vrati poruku o uspehu
+     */
     public function giveVip(){
         if($_POST['username']==""){
             $messageUsername="Korisnicko ime nije uneto.";
@@ -77,12 +87,18 @@ class Admin{
         }
     }
     
-    //prikazuje formu za oduzimanje vip statusa
+     /*MIHAJLO KRPOVIC
+     * prikazuje formu za oduzimanje Vip statusa
+     */
     public function takeVipShow($username=NULL, $messageUsername=NULL, $messageCorrect=NULL){
         require_once('views/AdminOduzmiVip/adminoduzmivip.php');
     }
     
-    //aktivira se klikom na submit forme za oduzimanje vip statusa
+   /*MIHAJLO KRPOVIC
+     * akcija kontrolera koja se poziva kada se submit-uje forma za oduzimanje vipStatusa
+     * ukoliko nisu uneti svi potrebni parametri vrati poruku sa greskom
+     * u suprotnom izvrsi uspesno i vrati poruku o uspehu
+     */
     public function takeVip(){
         if($_POST['username']==""){
             $messageUsername="Korisnicko ime nije uneto.";
@@ -121,13 +137,19 @@ class Admin{
         }
     }
     
-    //prikazuje formu za oduzimanje vip statusa
+    /*MIHAJLO KRPOVIC
+     * prikazuje formu za banovanje korisnika
+     */
     public function banUserShow($username=NULL, $messageUsername=NULL, $messageCorrect=NULL){
         
         require_once('views/AdminBanujKorisnika/adminbanujkorisnika.php');
     }
     
-    //aktivira se klikom na submit forme za oduzimanje vip statusa
+    /*MIHAJLO KRPOVIC
+     * akcija kontrolera koja se poziva kada se submit-uje forma za banovanje korisnika
+     * ukoliko nisu uneti svi potrebni parametri vrati poruku sa greskom
+     * u suprotnom izvrsi uspesno i vrati poruku o uspehu
+     */
     public function banUser(){
         if($_POST['username']==""){
             $messageUsername="Korisnicko ime nije uneto.";
@@ -153,10 +175,18 @@ class Admin{
         }
     }
     
+    /*MIHAJLO KRPOVIC
+     * prikazuje formu za brisanje oglasa
+     */
     public function deleteAdShow($id=NULL, $messageId=NULL, $messageCorrect=NULL){
         require_once('./views/AdminBrisanje/adminbrisanje.php');
     }
     
+    /*MIHAJLO KRPOVIC
+     * akcija kontrolera koja se poziva kada se submit-uje forma za brisanje oglasa
+     * ukoliko nisu uneti svi potrebni parametri vrati poruku sa greskom
+     * u suprotnom izvrsi uspesno i vrati poruku o uspehu
+     */
     public function deleteAd(){
         if($_POST['id']==""){
             $messageUsername="Id oglasa nije unet.";

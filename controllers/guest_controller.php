@@ -22,25 +22,36 @@ class Guest{
         }
     }
     
-    //prikazuje formu za prijavu na sistem
+    /*MIHAJLO KRPOVIC
+     * prikazuje formu za logovanje na sistem
+     */
     public function loginShow($username=NULL, $password=NULL, $messageUsername=NULL, $messagePassword=NULL){
         require_once('views/Prijava/prijava.php');
     }
     
-    //pocetna stranica za gosta
+    /*MIHAJLO KRPOVIC
+     * postavlja guest kontroler 
+     * poziva odgovarajuci pogled, dobrodosli
+     */
     public function index(){
         $controller="guest";
         require_once('views/Dobrodosli/dobrodosli.php');
     }
     
-    //glavna za gosta
+    /*MIHAJLO KRPOVIC
+     * postavlja guest kontroler 
+     * poziva odgovarajuci pogled, glavna gost
+     */
     public function index1(){
         $controller="guest";
         require_once('views/GlavnaGost/glavnaGost.php');
     }
     
-    //funkcija za logovanje, ako su uspesni parametri za login
-    //ispis gresaka ukoliko parametri nisu ok
+    /*MIHAJLO KRPOVIC
+     *akcija kontrolera kada se submit-uje forma za logovanje
+     * vrati poruke o greskama ukoliko postoje greske(nisu uneti svi podaci ispravno)
+     * izvrsi uspesno i vrati poruku o uspehu u suprotnom
+     */
     public function login(){
         if($_POST['username']==""){
             $messageUsername="Korisnicko ime nije uneto.";
@@ -86,13 +97,18 @@ class Guest{
         }
     }
     
-    //prikazuje formu za promenu lozinke
+    /*MIHAJLO KRPOVIC
+     * prikazuje formu za promenu lozinke
+     */
     public function changePasswordShow($username=NULL, $oldPassword=NULL, $newPassword=NULL, $newnewPassword=NULL, $messageUsername=NULL, $messageOldPassword=NULL, $messageNewPassword=NULL, $messageNewNewPassword=NULL){
         require_once('views/Promenalozinke/promenalozinke.php');
     }
     
-    //funkcija za promenu lozinke, ako su uspesni parametri za promenu
-    //ispis gresaka ukoliko parametri nisu ok
+    /*MIHAJLO KRPOVIC
+     * akcija kontrolera koja se poziva kada se submit-uje forma za promenu lozinke
+     * ukoliko nisu uneti svi potrebni parametri vrati poruku sa greskom
+     * u suprotnom izvrsi uspesno i vrati poruku o uspehu
+     */
     public function changePassword(){
         if($_POST['username']==""){
             $messageUsername="Korisnicko ime nije uneto.";
@@ -137,7 +153,7 @@ class Guest{
                     else{
                         User::newPassword($_POST['username'], $_POST['newPassword']);
                         $this->changePasswordShow(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
-                        echo 'Uspesno ste promenili lozinku.';
+                        echo '<p style="text-align:center; color:green"> Uspesno ste promenili lozinku.</p>';
                     }
                 }
             }
@@ -147,11 +163,18 @@ class Guest{
         }
     }
     
-    //za prikaz forme za registraciju
+      /*STEFAN PEJOVIC
+     * prikazuje formu za registraciju
+     */
     public function signInShow($firstname=NULL, $lastname=NULL, $email=NULL, $phone=NULL, $username=NULL, $password=NULL, $newnewPassword=NULL, $tip=NULL, $messageFirstName=NULL, $messageLastName=NULL, $messageEmail=NULL, $messagePhone=NULL,$messageUsername=NULL, $messagePassword=NULL, $messageNewNewPassword=NULL, $messageTip=NULL, $messageCorrect=NULL){
         require_once('./views/Registracija/registracija.php');
     }
     
+    /*STEFAN PEJOVIC
+     * akcija kontrolera koja se poziva kada se submit-uje forma za registraciju
+     * ukoliko nisu uneti svi potrebni parametri vrati poruku sa greskom
+     * u suprotnom izvrsi uspesno i vrati poruku o uspehu
+     */
     public function signIn(){
         if($_POST['firstname']==""){
             $messageFirstName="Ime nije uneto.";
@@ -239,7 +262,11 @@ class Guest{
         }
     }
     
-    
+    /*STEFAN PEJOVIC
+     * akcija kontrolera za pretrazivanje oglasa kada se submit-uje forma
+     * ukoliko nisu uneti svi potrebni parametri vrati poruku sa greskom
+     * u suprotnom izvrsi uspesno i vrati poruku o uspehu  i poziva odgovarajuci pogled
+     */
     public function searchAd(){
         if (empty($_POST['marka'])){
             $marka="";
@@ -292,9 +319,14 @@ class Guest{
         
     
       $nizOglasi=Ad::searchAd($marka,$model,$godisteOd,$godisteDo,$cenaOd,$cenaDo,$garancija,$rate);
+      //$nizOglasiVip=Ad::searchAdVip($marka,$model,$godisteOd,$godisteDo,$cenaOd,$cenaDo,$garancija,$rate);//ovo smo dodali
+      //$nizOglasiObican=Ad::searchAdObican($marka,$model,$godisteOd,$godisteDo,$cenaOd,$cenaDo,$garancija,$rate);//ovo smo dodali
       require_once 'views/PretragaOglasaGost/pretragaOglasa.php';
     }
     
+    /*STEFAN PEJOVIC
+     * akcija kontrolera koja prikazuje detaljan oglas i poziva odgovarajuci pogled
+     */
      public function fullAd(){
         
         $idOglas=$_POST['idOglasaZaPrikaz'];
@@ -304,14 +336,9 @@ class Guest{
     } 
     
     
-    
-    
-    
-    
-    
-    
-    
-    //ovo je sve dole za recenzije, nisam siguran da li je ok
+    /*STEFAN PEJOVIC
+     * akcija kontrolera koja prikazuje komentare i poziva odGOVARAJUCI POGLED
+     */
      public function postaviKomPre(){
         $idOglasa=$_POST['idOglasa'];
         $oglas= Ad::getAdWithId($idOglasa);
@@ -321,6 +348,9 @@ class Guest{
         
     }
     
+    /*STEFAN PEJOVIC
+     * akcija kontrolera koja se poziva kada se postavljaju komentari i poziva odGOVARAJUCI POGLED
+     */
     public function postaviKom(){
         
         if (empty($_POST['komentar']) || empty($_POST['ocena'])  )
@@ -336,15 +366,26 @@ class Guest{
       //  require_once 'views/oglasi/prikaz_recenzija.php';
     }
     
-    
+    /*STEFAN PEJOVIC
+     * akcija kontrolera koja prikazuje komentare i poziva odGOVARAJUCI POGLED
+     */
     public function postaviPre(){
         require_once 'views/PostaviOglasObican/postaviOglasObican.php';
         
     }
     
-    //ovo zaista ne znam sta je
+   /*STEFAN PEJOVIC
+     * akcija kontrolera koja prikazuje sve komentare i poziva odGOVARAJUCI POGLED
+     */
     public function prikaz_rezultata() {
             require_once 'views/oglasi/forma_pretraga.php';
+    }
+    
+    /*STEFAN PEJOVIC
+     * akcija kontrolera koja poziva odGOVARAJUCI POGLED
+     */
+    public function faq(){
+        require_once ('views/FAQ1/faq1.php');
     }
 }
 
